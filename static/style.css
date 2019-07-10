@@ -32,9 +32,7 @@ footer {
 	color: white;
 	text-align: center;
 	height: 57px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
+	position: fixed;
 }
 
 .img {
