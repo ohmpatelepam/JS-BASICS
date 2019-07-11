@@ -11,16 +11,16 @@ const arr = {
     "foxnews": "Fox News"
 };
 const data = {
-    "ajjtak": "AJJ Tak",
-    "indiatv": "India TV",
-    "zeenews": "Zee News",
-    "abpnews": "ABP News",
-    "ndtv": "NDTV",
-    "indiatv": "India TV",
-    "timesnow": "Times Now",
-    "republic": "Republic",
-    "channelnbc": "Channel NBC",
-    "foxnews": "Fox News"
+    "ajjtak": "AJJ Tak  Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem eius asperiores quos consequuntur necessitatibus tempore ullam non, molestias amet temporibus nulla veritatis nesciunt alias ipsa, praesentium cupiditate eligendi? Consequatur?  Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem eius asperiores quos consequuntur necessitatibus tempore ullam non, molestias amet temporibus nulla veritatis nesciunt alias ipsa, praesentium cupiditate eligendi? Consequatur?  Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem eius asperiores quos consequuntur necessitatibus tempore ullam non, molestias amet temporibus nulla veritatis nesciunt alias ipsa, praesentium cupiditate eligendi? Consequatur?",
+    "indiatv": "India TV  Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem eius asperiores quos consequuntur necessitatibus tempore ullam non, molestias amet temporibus nulla veritatis nesciunt alias ipsa, praesentium cupiditate eligendi? Consequatur?  Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem eius asperiores quos consequuntur necessitatibus tempore ullam non, molestias amet temporibus nulla veritatis nesciunt alias ipsa, praesentium cupiditate eligendi? Consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem eius asperiores quos consequuntur necessitatibus tempore ullam non, molestias amet temporibus nulla veritatis nesciunt alias ipsa, praesentium cupiditate eligendi? Consequatur?",
+    "zeenews": "Zee News  Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem eius asperiores quos consequuntur necessitatibus tempore ullam non, molestias amet temporibus nulla veritatis nesciunt alias ipsa, praesentium cupiditate eligendi? Consequatur?  Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem eius asperiores quos consequuntur necessitatibus tempore ullam non, molestias amet temporibus nulla veritatis nesciunt alias ipsa, praesentium cupiditate eligendi? Consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem eius asperiores quos consequuntur necessitatibus tempore ullam non, molestias amet temporibus nulla veritatis nesciunt alias ipsa, praesentium cupiditate eligendi? Consequatur?",
+    "abpnews": "ABP News  Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem eius asperiores quos consequuntur necessitatibus tempore ullam non, molestias amet temporibus nulla veritatis nesciunt alias ipsa, praesentium cupiditate eligendi? Consequatur?  Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem eius asperiores quos consequuntur necessitatibus tempore ullam non, molestias amet temporibus nulla veritatis nesciunt alias ipsa, praesentium cupiditate eligendi? Consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem eius asperiores quos consequuntur necessitatibus tempore ullam non, molestias amet temporibus nulla veritatis nesciunt alias ipsa, praesentium cupiditate eligendi? Consequatur?",
+    "ndtv": "NDTV  Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem eius asperiores quos consequuntur necessitatibus tempore ullam non, molestias amet temporibus nulla veritatis nesciunt alias ipsa, praesentium cupiditate eligendi? Consequatur?  Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem eius asperiores quos consequuntur necessitatibus tempore ullam non, molestias amet temporibus nulla veritatis nesciunt alias ipsa, praesentium cupiditate eligendi? Consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem eius asperiores quos consequuntur necessitatibus tempore ullam non, molestias amet temporibus nulla veritatis nesciunt alias ipsa, praesentium cupiditate eligendi? Consequatur?",
+    "indiatv": "India TV  Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem eius asperiores quos consequuntur necessitatibus tempore ullam non, molestias amet temporibus nulla veritatis nesciunt alias ipsa, praesentium cupiditate eligendi? Consequatur?  Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem eius asperiores quos consequuntur necessitatibus tempore ullam non, molestias amet temporibus nulla veritatis nesciunt alias ipsa, praesentium cupiditate eligendi? Consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem eius asperiores quos consequuntur necessitatibus tempore ullam non, molestias amet temporibus nulla veritatis nesciunt alias ipsa, praesentium cupiditate eligendi? Consequatur?",
+    "timesnow": "Times Now  Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem eius asperiores quos consequuntur necessitatibus tempore ullam non, molestias amet temporibus nulla veritatis nesciunt alias ipsa, praesentium cupiditate eligendi? Consequatur?  Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem eius asperiores quos consequuntur necessitatibus tempore ullam non, molestias amet temporibus nulla veritatis nesciunt alias ipsa, praesentium cupiditate eligendi? Consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem eius asperiores quos consequuntur necessitatibus tempore ullam non, molestias amet temporibus nulla veritatis nesciunt alias ipsa, praesentium cupiditate eligendi? Consequatur?",
+    "republic": "Republic  Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem eius asperiores quos consequuntur necessitatibus tempore ullam non, molestias amet temporibus nulla veritatis nesciunt alias ipsa, praesentium cupiditate eligendi? Consequatur?  Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem eius asperiores quos consequuntur necessitatibus tempore ullam non, molestias amet temporibus nulla veritatis nesciunt alias ipsa, praesentium cupiditate eligendi? Consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem eius asperiores quos consequuntur necessitatibus tempore ullam non, molestias amet temporibus nulla veritatis nesciunt alias ipsa, praesentium cupiditate eligendi? Consequatur?",
+    "channelnbc": "Channel NBC  Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem eius asperiores quos consequuntur necessitatibus tempore ullam non, molestias amet temporibus nulla veritatis nesciunt alias ipsa, praesentium cupiditate eligendi? Consequatur?  Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem eius asperiores quos consequuntur necessitatibus tempore ullam non, molestias amet temporibus nulla veritatis nesciunt alias ipsa, praesentium cupiditate eligendi? Consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem eius asperiores quos consequuntur necessitatibus tempore ullam non, molestias amet temporibus nulla veritatis nesciunt alias ipsa, praesentium cupiditate eligendi? Consequatur?",
+    "foxnews": "Fox News  Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem eius asperiores quos consequuntur necessitatibus tempore ullam non, molestias amet temporibus nulla veritatis nesciunt alias ipsa, praesentium cupiditate eligendi? Consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem eius asperiores quos consequuntur necessitatibus tempore ullam non, molestias amet temporibus nulla veritatis nesciunt alias ipsa, praesentium cupiditate eligendi? Consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem eius asperiores quos consequuntur necessitatibus tempore ullam non, molestias amet temporibus nulla veritatis nesciunt alias ipsa, praesentium cupiditate eligendi? Consequatur?"
 }
 
 function setup() {
@@ -33,7 +33,7 @@ function setup() {
 function Setup_Footer() {
 
     var h1 = document.createElement("h1");
-    h1.innerHTML = " &copy; NewsFeed 2019";
+    h1.innerHTML = " © NewsFeed 2019";
     h1.className = "footer1";
     document.getElementById("footer").appendChild(h1);
 }
@@ -110,11 +110,14 @@ function Create_ContentDiv(parent_node) {
     window.Content_Div = document.createElement("div");
     window.Content_Div.className = "content-div";
     parent_node.appendChild(window.Content_Div);
+    window.Content_Div.innerHTML = "";
     Show_All_Channels(Content_Div, arr);
 }
 
-function Create_InsideDiv(parent_node, text) {
-    var inside_div = document.createElement("div");
+function Create_InsideDiv(parent_node, key) {
+
+    console.log("key" + key);
+    var inside_div = document.createElement("div"); //text
     inside_div.className = "inside-div";
     parent_node.appendChild(inside_div);
 
@@ -125,8 +128,10 @@ function Create_InsideDiv(parent_node, text) {
     inside_div.appendChild(img);
 
     let h1 = document.createElement("h1");
-    h1.innerHTML = text;
+    h1.innerHTML = arr[key];
     h1.className = "title";
+    h1.title = key;
+    h1.id = "news_title";
     inside_div.appendChild(h1);
 
     let p = document.createElement("p");
@@ -143,18 +148,21 @@ function Create_InsideDiv(parent_node, text) {
     let Continue_reading_button = document.createElement("button");
     Continue_reading_button.innerHTML = "Continue Reading";
     Continue_reading_button.className = "button";
-    Continue_reading_button.addEventListener("click",Show_PopUP);
+    Continue_reading_button.addEventListener("click", function() {
+        Show_PopUP(key);
+    });
     inside_div.appendChild(Continue_reading_button);
 
     parent_node.appendChild(document.createElement("hr"));
 }
 
 function Show_All_Channels(Content_Div, arr) {
-    while (window.Content_Div.firstChild) {
-        window.Content_Div.removeChild(window.Content_Div.firstChild);
-    }
+    // while (window.Content_Div.firstChild) {
+    //     window.Content_Div.removeChild(window.Content_Div.firstChild);
+    // }
+    Content_Div.innerHTML = "";
     for (var key in arr) {
-        Create_InsideDiv(Content_Div, arr[key]);
+        Create_InsideDiv(Content_Div, key);
     }
 }
 
@@ -172,10 +180,11 @@ function setupdropdown() {
 
 function Show_Specific_Channel(option) {
     console.log("hello");
-    while (window.Content_Div.firstChild) {
-        window.Content_Div.removeChild(window.Content_Div.firstChild);
-    }
-    let news_channel = arr[option];
+    // while (window.Content_Div.firstChild) {
+    //     window.Content_Div.removeChild(window.Content_Div.firstChild);
+    // }
+    let news_channel = option;
+    window.Content_Div.innerHTML = "";
     Create_InsideDiv(window.Content_Div, news_channel);
 
 }
@@ -183,19 +192,21 @@ function Show_Specific_Channel(option) {
 function Validate_email() {
     console.log("subscribe pressed");
     let email = document.getElementById("input").value;
-    let error_text_field =  document.getElementById("error_text");
+    let error_text_field = document.getElementById("error_text");
     error_text_field.style.visibility = "visible";
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
 
         let emails = JSON.parse(localStorage.getItem("email"));
-        if(emails == null){ emails = [];}
-        if(emails.includes(email)){
+        if (emails == null) {
+            emails = [];
+        }
+        if (emails.includes(email)) {
             error_text_field.innerHTML = "Email Already Exist";
             error_text_field.backgroundColor = "blue";
             error_text_field.style.visibility = "visible";
             document.getElementById("input").value = ""
-            setTimeout(Clear,1000);
-            return 
+            setTimeout(Clear, 1000);
+            return
         }
         emails.push(email);
         localStorage.setItem("email", JSON.stringify(emails));
@@ -203,19 +214,66 @@ function Validate_email() {
         error_text_field.style.backgroundColor = "Green";
         error_text_field.style.visibility = "visible";
         document.getElementById("input").value = "";
-        setTimeout(Clear,1000);
+        setTimeout(Clear, 1000);
         return;
     }
     error_text_field.innerHTML = "Email Wrong";
     error_text_field.style.backgroundColor = "red";
-    setTimeout(Clear,1000);
+    setTimeout(Clear, 1000);
 }
-function Show_PopUP(){
-    let full_news = data[document.getElementById("dropdown").value];
+
+function Show_PopUP(key) {
+    console.log("pop");
+
+    let full_news = data[key];
+
+    let parent = document.getElementById("heading");
 
 
+    let modal = document.createElement("div");
+    modal.className = "modal";
+    modal.id = "myModal";
+    parent.appendChild(modal);
+
+    let modal_content = document.createElement("div");
+    modal_content.className = "modal-content";
+    modal.appendChild(modal_content);
+
+    let modal_header = document.createElement("div");
+    modal_header.className = "modal-header";
+    modal_content.appendChild(modal_header);
+
+
+    let heading = document.createElement("h2");
+    heading.innerHTML = arr[key];
+    modal_header.appendChild(heading);
+
+    let modal_body = document.createElement("div");
+    modal_body.className = "modal-body";
+    modal_content.appendChild(modal_body);
+
+    let para = document.createElement("p");
+    para.innerHTML = full_news;
+    para.style.color = "black";
+    modal_body.appendChild(para);
+
+
+    modal.style.display = "block";
+
+    var btn = document.getElementById("myBtn");
+
+
+    var span = document.getElementsByClassName("close")[0];
+
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
 
 }
-function Clear(){
+
+function Clear() {
     document.getElementById("error_text").style.visibility = "hidden";
 }
