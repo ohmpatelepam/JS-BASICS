@@ -252,17 +252,10 @@ function validateEmail() {
 }
 //helper function to show the popup on button click
 function showPopUP(key) {
-
-    console.log("pop");
-
     let full_news = data[key];
     document.getElementById("modal-para").innerHTML = full_news;
     document.getElementById("modal-header").innerHTML = arr[key];
     document.getElementById("myModal").style.display = "block";
-
-
-
-
 }
 
 //function to clear the error text
