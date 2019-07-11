@@ -23,36 +23,38 @@ const data = {
     "foxnews": "Fox News  Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem eius asperiores quos consequuntur necessitatibus tempore ullam non, molestias amet temporibus nulla veritatis nesciunt alias ipsa, praesentium cupiditate eligendi? Consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem eius asperiores quos consequuntur necessitatibus tempore ullam non, molestias amet temporibus nulla veritatis nesciunt alias ipsa, praesentium cupiditate eligendi? Consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem eius asperiores quos consequuntur necessitatibus tempore ullam non, molestias amet temporibus nulla veritatis nesciunt alias ipsa, praesentium cupiditate eligendi? Consequatur?"
 }
 
+//Helper function to setup
 function setup() {
 
-    Setup_Header();
-    Setup_Footer();
-    Setup_Main();
+    setupHeader();
+    setupFooter();
+    setupMain();
 }
-
-function Setup_Footer() {
+//setting up the footer
+function setupFooter() {
 
     var h1 = document.createElement("h1");
     h1.innerHTML = " © NewsFeed 2019";
     h1.className = "footer1";
     document.getElementById("footer").appendChild(h1);
 }
-
-function Setup_Header() {
+//setting up the header
+function setupHeader() {
     var h1 = document.createElement("h2");
     h1.innerHTML = "NEWSFEED <span class=" + "subhead" + "> Yet another Newsfeed </span>";
     h1.id = "head";
     document.getElementById("heading").appendChild(h1);
 }
-
-function Setup_Main() {
+//helper function to set up the main content
+function setupMain() {
 
     var main_tag = document.getElementById("main_content");
-    Create_Aside(main_tag)
-    Create_ContentDiv(main_tag)
+    createAside(main_tag);
+    createContentDiv(main_tag);
+    createPopUp();
 }
-
-function Create_Aside(parent_node) {
+//setting up the side pannel
+function createAside(parent_node) {
 
     let aside = document.createElement("aside");
     parent_node.appendChild(aside);
@@ -66,16 +68,10 @@ function Create_Aside(parent_node) {
     newList.id = "dropdown";
     newList.addEventListener("change", setupdropdown);
     newList.appendChild(new Option("All", "all"));
-    newList.appendChild(new Option("AJJ Tak", "ajjtak"));
-    newList.appendChild(new Option("India TV", "indiatv"));
-    newList.appendChild(new Option("Zee News", "zeenews"));
-    newList.appendChild(new Option("ABP News", "abpnews"));
-    newList.appendChild(new Option("NDTV", "ndtv"));
-    newList.appendChild(new Option("India Tv", "indiatv"));
-    newList.appendChild(new Option("Times Now", "timesnow"));
-    newList.appendChild(new Option("Republic", "republic"));
-    newList.appendChild(new Option("Channel NBC", "channelnbc"));
-    newList.appendChild(new Option("Fox News", "foxnews"));
+
+    for (var key in arr) {
+        newList.appendChild(new Option(arr[key], key));
+    }
     aside.appendChild(newList);
 
     let side_panel_subscribe_text = document.createElement("p");
@@ -92,7 +88,7 @@ function Create_Aside(parent_node) {
     let subscribe_button = document.createElement("button");
     subscribe_button.id = "subscribe-button";
     subscribe_button.innerHTML = "Subscribe";
-    subscribe_button.addEventListener("click", Validate_email);
+    subscribe_button.addEventListener("click", validateEmail);
     aside.appendChild(subscribe_button);
 
     let error_text = document.createElement("p");
@@ -105,18 +101,18 @@ function Create_Aside(parent_node) {
     error_text.style.borderRadius = "10px";
     aside.appendChild(error_text);
 }
-
-function Create_ContentDiv(parent_node) {
+//creating main content of each cell
+function createContentDiv(parent_node) {
     window.Content_Div = document.createElement("div");
     window.Content_Div.className = "content-div";
     parent_node.appendChild(window.Content_Div);
     window.Content_Div.innerHTML = "";
-    Show_All_Channels(Content_Div, arr);
+    showAllChannels(Content_Div, arr);
 }
+// creating the elements of main content
+function createInsideDiv(parent_node, key) {
 
-function Create_InsideDiv(parent_node, key) {
 
-    console.log("key" + key);
     var inside_div = document.createElement("div"); //text
     inside_div.className = "inside-div";
     parent_node.appendChild(inside_div);
@@ -149,48 +145,81 @@ function Create_InsideDiv(parent_node, key) {
     Continue_reading_button.innerHTML = "Continue Reading";
     Continue_reading_button.className = "button";
     Continue_reading_button.addEventListener("click", function() {
-        Show_PopUP(key);
+        showPopUP(key);
     });
     inside_div.appendChild(Continue_reading_button);
-
     parent_node.appendChild(document.createElement("hr"));
 }
+//Implemented Popup
+function createPopUp() {
+    let parent = document.getElementById("heading");
+    let modal = document.createElement("div");
+    modal.className = "modal";
+    modal.id = "myModal";
+    parent.appendChild(modal);
 
-function Show_All_Channels(Content_Div, arr) {
-    // while (window.Content_Div.firstChild) {
-    //     window.Content_Div.removeChild(window.Content_Div.firstChild);
-    // }
+    let modal_content = document.createElement("div");
+    modal_content.className = "modal-content";
+    modal.appendChild(modal_content);
+
+    let modal_header = document.createElement("div");
+    modal_header.className = "modal-header";
+    modal_content.appendChild(modal_header);
+
+
+    let heading = document.createElement("h2");
+    heading.id = "modal-header";
+    modal_header.appendChild(heading);
+
+    let modal_body = document.createElement("div");
+    modal_body.className = "modal-body";
+    modal_content.appendChild(modal_body);
+
+    let para = document.createElement("p");
+    para.id = "modal-para";
+    para.style.color = "black";
+    modal.style.display = "none";
+    modal_body.appendChild(para);
+    // modal.style.visibility = "hidden";
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+}
+// helper function to show all the channels
+function showAllChannels(Content_Div, arr) {
+
     Content_Div.innerHTML = "";
     for (var key in arr) {
-        Create_InsideDiv(Content_Div, key);
+        createInsideDiv(Content_Div, key);
     }
 }
+// helper function to show specif channel based on channel selection
+function showSpecificChannel(option) {
 
+    let news_channel = option;
+    window.Content_Div.innerHTML = "";
+    createInsideDiv(window.Content_Div, news_channel);
+
+}
+
+//Implemented dropdown
 function setupdropdown() {
-    console.log("hii");
 
     let e = document.getElementById("dropdown");
     let option = e.options[e.selectedIndex].value;
     if (option != "all") {
-        Show_Specific_Channel(option);
+        showSpecificChannel(option);
     } else {
-        Show_All_Channels(window.Content_Div, arr);
+        showAllChannels(window.Content_Div, arr);
     }
 }
 
-function Show_Specific_Channel(option) {
-    console.log("hello");
-    // while (window.Content_Div.firstChild) {
-    //     window.Content_Div.removeChild(window.Content_Div.firstChild);
-    // }
-    let news_channel = option;
-    window.Content_Div.innerHTML = "";
-    Create_InsideDiv(window.Content_Div, news_channel);
+//helper function to validate the email
+function validateEmail() {
 
-}
-
-function Validate_email() {
-    console.log("subscribe pressed");
     let email = document.getElementById("input").value;
     let error_text_field = document.getElementById("error_text");
     error_text_field.style.visibility = "visible";
@@ -221,59 +250,22 @@ function Validate_email() {
     error_text_field.style.backgroundColor = "red";
     setTimeout(Clear, 1000);
 }
+//helper function to show the popup on button click
+function showPopUP(key) {
 
-function Show_PopUP(key) {
     console.log("pop");
 
     let full_news = data[key];
-
-    let parent = document.getElementById("heading");
-
-
-    let modal = document.createElement("div");
-    modal.className = "modal";
-    modal.id = "myModal";
-    parent.appendChild(modal);
-
-    let modal_content = document.createElement("div");
-    modal_content.className = "modal-content";
-    modal.appendChild(modal_content);
-
-    let modal_header = document.createElement("div");
-    modal_header.className = "modal-header";
-    modal_content.appendChild(modal_header);
+    document.getElementById("modal-para").innerHTML = full_news;
+    document.getElementById("modal-header").innerHTML = arr[key];
+    document.getElementById("myModal").style.display = "block";
 
 
-    let heading = document.createElement("h2");
-    heading.innerHTML = arr[key];
-    modal_header.appendChild(heading);
 
-    let modal_body = document.createElement("div");
-    modal_body.className = "modal-body";
-    modal_content.appendChild(modal_body);
-
-    let para = document.createElement("p");
-    para.innerHTML = full_news;
-    para.style.color = "black";
-    modal_body.appendChild(para);
-
-
-    modal.style.display = "block";
-
-    var btn = document.getElementById("myBtn");
-
-
-    var span = document.getElementsByClassName("close")[0];
-
-
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
 
 }
 
+//function to clear the error text
 function Clear() {
     document.getElementById("error_text").style.visibility = "hidden";
 }
