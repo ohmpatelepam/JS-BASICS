@@ -1,3 +1,4 @@
+//Static Data source
 const arr = {
     "ajjtak": "AJJ Tak",
     "indiatv": "India TV",
@@ -23,7 +24,7 @@ const data = {
     "foxnews": "Fox News  Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem eius asperiores quos consequuntur necessitatibus tempore ullam non, molestias amet temporibus nulla veritatis nesciunt alias ipsa, praesentium cupiditate eligendi? Consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem eius asperiores quos consequuntur necessitatibus tempore ullam non, molestias amet temporibus nulla veritatis nesciunt alias ipsa, praesentium cupiditate eligendi? Consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem eius asperiores quos consequuntur necessitatibus tempore ullam non, molestias amet temporibus nulla veritatis nesciunt alias ipsa, praesentium cupiditate eligendi? Consequatur?"
 }
 
-//Helper function to setup
+//Helper function to setup HTML content
 function setup() {
 
     setupHeader();
@@ -77,7 +78,7 @@ function createAside(parent_node) {
 
     let input = createElement("input","","input");
     input.type = "text";
-    input.placeholder = "Email Address";
+    input.placeholder = " Email Address";
     aside.appendChild(input);
 
     let subscribe_button = createElement("button","","subscribe-button");
@@ -87,11 +88,6 @@ function createAside(parent_node) {
 
     let error_text = createElement("p","","error_text");
     error_text.innerHTML = "";
-    error_text.style.backgroundColor = "white";
-    error_text.style.fontSize = "12px";
-    error_text.style.padding = "8px";
-    error_text.style.visibility = "hidden";
-    error_text.style.borderRadius = "10px";
     aside.appendChild(error_text);
 }
 //creating main content of each cell
